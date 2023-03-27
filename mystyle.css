@@ -1,0 +1,109 @@
+body{
+    background-image: linear-gradient( to right, rgb(62, 189, 200), rgb(205, 163, 170));
+}
+
+.nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+}
+.nav1
+{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn
+{
+    padding: 8px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: blue;
+}
+h1
+{
+    text-align: center;
+}
+
+.scale:hover
+{
+    transform: scale(1.5);
+}
+.box
+{
+    display: flex;
+    flex-direction: column;
+    border: 10px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, pink, skyblue, pink);
+
+}
+
+.job
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    animation: box 2s infinite alternate;
+}
+@keyframes box
+{
+    0%
+    {
+        transform: translateY(20px);
+    }
+}
+.image
+{
+    width: 200px;
+    height: 160px;
+}
+p
+{
+    text-align: center;
+}
+.fix
+{
+    background-color: grey;
+    padding: 10px;
+    position: sticky;
+}
+
+
+@media screen and (min-width:393px) and (max-width:500px)
+{
+    .btn
+    {
+        display: none;
+    }
+    .scale
+    {
+        font-size: 10px;
+        padding: 90px;
+    }
+    .image
+    {
+    width: 180px;
+    height: 160px;
+    }   
+}
+@media screen and (min-width:360px) and (max-width:400px)
+{
+    .btn
+    {
+        display: none;
+    }
+    .scale
+    {
+        font-size: 10px;
+        padding: 60px;
+    }
+    
+   
+   
+}
